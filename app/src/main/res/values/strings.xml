@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Recovery Tracker</string>
+    <string name="PAM_button_label">How are you feeling?</string>
+    <string name="pain_survey_button_label">How is your pain?</string>
+    <string name="PAM_prompt">Select the photo that best captures how you feel right now:</string>
+    <string name="mild_pain_response">Mild</string>
+    <string name="discomforting_pain_response">Discomforting</string>
+    <string name="distressing_pain_response">Distressing</string>
+    <string name="horrible_pain_response">Horrible</string>
+    <string name="excruciating_pain_response">Excruciating</string>
+    <string name="pain_survey_title">Daily Pain Survey</string>
+    <string name="pain_survey_question_1">Which word describes your pain right now?</string>
+    <string name="pain_survey_question_2">Which word describes it at its worst?</string>
+    <string name="pain_survey_question_3">Which word describes it when it is least?</string>
+    <string name="pain_survey_submit_button_label">Submit</string>
+    <string name="survey_records_button_label">My History</string>
+    <string name="survey_records_title">My History</string>
+    <string name="PAM_record_title">PAM Result</string>
+    <string name="pain_record_title">Pain Record</string>
+    <string name="step_counter_button_label">Step Counter</string>
+</resources>

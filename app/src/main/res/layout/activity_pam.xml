@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PAMActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="@string/PAM_prompt"
+            android:textColor="#1A4881"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tiredImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/afraidImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/afraid"
+            android:onClick="onSelectImage" />
+
+        <ImageView
+            android:id="@+id/angryImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/afraidImageView"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/angry"
+            android:onClick="onSelectImage"/>
+
+        <ImageView
+            android:id="@+id/calmImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/angryImageView"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/calm"
+            android:onClick="onSelectImage" />
+
+        <ImageView
+            android:id="@+id/delightedImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/calmImageView"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/delighted"
+            android:onClick="onSelectImage" />
+
+        <ImageView
+            android:id="@+id/excitedImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/afraidImageView"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/excited"
+            android:onClick="onSelectImage" />
+
+        <ImageView
+            android:id="@+id/frustratedImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/angryImageView"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/excitedImageView"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/frustrated"
+            android:onClick="onSelectImage" />
+
+        <ImageView
+            android:id="@+id/gladImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/calmImageView"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/frustratedImageView"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/glad"
+            android:onClick="onSelectImage" />
+
+        <ImageView
+            android:id="@+id/gloomyImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/delightedImageView"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/gladImageView"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/gloomy"
+            android:onClick="onSelectImage" />
+
+        <ImageView
+            android:id="@+id/happyImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/excitedImageView"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/happy"
+            android:onClick="onSelectImage" />
+
+        <ImageView
+            android:id="@+id/miserableImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/frustratedImageView"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/happyImageView"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/miserable"
+            android:onClick="onSelectImage" />
+
+        <ImageView
+            android:id="@+id/sadImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/gladImageView"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/miserableImageView"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/sad"
+            android:onClick="onSelectImage" />
+
+        <ImageView
+            android:id="@+id/satisfiedImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/gloomyImageView"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/sadImageView"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/satisfied"
+            android:onClick="onSelectImage" />
+
+        <ImageView
+            android:id="@+id/sereneImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/happyImageView"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/serene"
+            android:onClick="onSelectImage" />
+
+        <ImageView
+            android:id="@+id/sleepyImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/miserableImageView"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/sereneImageView"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/sleepy"
+            android:onClick="onSelectImage" />
+
+        <ImageView
+            android:id="@+id/tenseImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/sadImageView"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/sleepyImageView"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/tense"
+            android:onClick="onSelectImage" />
+
+        <ImageView
+            android:id="@+id/tiredImageView"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/satisfiedImageView"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/tenseImageView"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/tired"
+            android:onClick="onSelectImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
